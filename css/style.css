@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --color-prymary    : #eb4d4d;
+    --color-prymary-2  : #ec4c4ce7;
+    --color-secondary-1: #615f62;
+    --color-secondary-2: #6b6b6d;
+    --color-secondary-3: #303031;
+    --color-black      : #0e0d0d;
+    --color-white      : #fff;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    outline        : none;
+    text-decoration: none;
+    list-style     : none;
+}
+
+html {
+    font-size      : 62.5%;
+    overflow-x     : hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-secondary-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Alegreya", serif;
+}
+
+p,
+a,
+input {
+    font-family: "Quicksand", sans-serif;
+}
+
+.main {
+    overflow: hidden;
+    /* Para animación ScrollReveal */
+}
+
+.heading {
+    font-size     : 3rem;
+    text-align    : center;
+    text-transform: uppercase;
+    margin-bottom : 2rem;
+    font-family   : "Alegreya", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin   : auto;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index : 10;
+    width   : 100%;
+    border-radius: 0px;
+background: linear-gradient(145deg, #333334, #2b2b2c);
+box-shadow:  5px 5px 10px #29292a,
+             -5px -5px 10px #373738;
+}
+
+nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    min-height     : 8vh;
+    background     : var(--color-secondary-3);
+}
+
+.container-logo {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.container-logo span {
+    font-size     : 3rem;
+    text-transform: uppercase;
+    color         : var(--color-prymary);
+    margin-left   : 0.5rem;
+}
+
+.logo {
+    width         : 7.5rem;
+    height        : 7rem;
+    margin-left   : 1.5rem;
+    padding-top   : 1rem;
+    padding-bottom: 1rem;
+}
+
+.hamb {
+    display: none;
+}
+
+.hamb .bi-list {
+    color    : var(--color-prymary);
+    font-size: 3rem;
+}
+
+.links-nav {
+    display: flex;
+    gap    : 2rem;
+    padding: 0;
+}
+
+.links-nav li {
+    margin-right: 3rem;
+    transition  : 2s;
+}
+
+.links-nav li a {
+    font-size  : 2rem;
+    font-weight: 800;
+    color      : var(--color-white);
+}
+
+.active {
+    border-bottom: double 0.5rem var(--color-white);
+    padding      : 0.5rem;
+    transition   : all 300ms ease-in-out;
+}
+
+.links-nav a:hover {
+    color     : var(--color-prymary);
+    padding   : 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+/* SECCIÓN INICIO */
+
+.home {
+    height          : 100vh;
+    background-image: url("../img/banner.jpg");
+    background-size : cover;
+    padding         : 15px;
+    clip-path       : polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    display         : flex;
+    position        : relative;
+}
+
+/*Bajar de sección*/
+
+.bi-arrow-bar-down {
+    position   : absolute;
+    color      : var(--color-white);
+    font-size  : 2.5rem;
+    font-weight: bold;
+    bottom     : 10%;
+    left       : 50%;
+    animation  : up-down 2s ease infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.home .container {
+    display       : flex;
+    flex-direction: column;
+}
+
+.home p {
+    color        : var(--color-white);
+    font-size    : 2.5rem;
+    font-family  : "Alegreya", serif;
+    font-weight  : bold;
+    /* background: rgba(0, 0, 0, 0.5);*/
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+
+/*------MEDIA QUERIES-------*/
+
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hamb {
+        display : block;
+        top     : 2.5rem;
+        position: absolute;
+        right   : 25px;
+        cursor  : pointer;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items   : flex-start;
+        padding       : 0.5rem 0;
+    }
+
+    .links-nav {
+        position       : fixed;
+        background     : var(--color-secondary-3);
+        left           : 0;
+        top            : 8.3rem;
+        width          : 55%;
+        height         : 92vh;
+        display        : flex;
+        justify-content: space-evenly;
+        align-items    : center;
+        flex-direction : column;
+        transform      : translateX(-100%);
+    }
+
+    .links-nav2 {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
