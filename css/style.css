@@ -55,6 +55,7 @@ input {
     text-transform: uppercase;
     margin-bottom : 2rem;
     font-family   : "Alegreya", serif;
+    color: var(--color-prymary);
 }
 
 .container {
