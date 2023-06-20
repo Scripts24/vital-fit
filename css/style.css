@@ -204,7 +204,7 @@ nav {
     color      : var(--color-white);
     font-size  : 2.5rem;
     font-weight: bold;
-    bottom     : 20%;
+    bottom     : 10%;
     left       : 50%;
     animation  : up-down 2s ease infinite;
 }
@@ -331,6 +331,62 @@ nav {
 .color-green {
     color: hsl(103, 59%, 43%);
 }
+
+/*Entrenamientos*/
+
+.program-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom:4rem;
+    margin-top: 4rem;
+}
+
+.program-card{
+    width: 22rem;
+    height: 26rem;
+    background-color: transparent;
+    padding: 1.5rem 1rem;
+    border: 2px solid var(--color-white);
+    transition: 2s ease-in-out;
+}
+
+.program-card:hover{
+    background-color: var(--color-prymary);
+    transform: scale(1.1);
+}
+
+.program-img{
+    width: 38px;
+}
+
+.program-shape{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .5rem;
+}
+
+.program-title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.program-description{
+    font-size: 1.4rem;
+    color: var(--color-white);
+    line-height: 120%;
+
+}
+
+
+
+
 
 /*Dietas*/
 
