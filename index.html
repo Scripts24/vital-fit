@@ -31,9 +31,8 @@
             <ul class="links-nav">
                 <li class="links"><a href="#home">Inicio</a></li>
                 <li class="links"><a href="#program">Planes</a></li>
-                <li class="links"><a href="#diet">Dietas</a></li>
                 <li class="links"><a href="#gallery">Galería</a></li>
-                <li class="links"><a href="#about">Nosotros</a></li>
+                <li class="links"><a href="#about">Equipo</a></li>
                 <li class="links"><a href="#contact">Contacto</a></li>
             </ul>
             <div class="hamb">
@@ -56,9 +55,56 @@
                 </a></p>
         </section>
         <!-- Fin Sección Inicio -->
+        <!-- Logos nutrición -->
+        <div class="logos">
+            <div class="logos-container">
+                <img src="./img/nutri/1.png" alt="nutrición" class="logos-img">
+                <img src="./img/nutri/2.png" alt="nutrición" class="logos-img">
+                <img src="./img/nutri/3.png" alt="nutrición" class="logos-img">
+                <img src="./img/nutri/4.png" alt="nutrición" class="logos-img">
+                <img src="./img/nutri/5.png" alt="nutrición" class="logos-img">
+                <img src="./img/nutri/6.png" alt="nutrición" class="logos-img">
+            </div>
+        </div>
+        <!-- Fin Logos nutrición -->
         <!-- Inicio sección Planes -->
         <section class="program" id="program">
-            <h2 class="heading">Planes</h2>
+            <h2 class="heading">Planes personalizados</h2>
+
+            <div class="calculate-container">
+                <div class="section-titles">
+                    <h2 class="section-title-border">CALCULAR IMC</h2>
+                </div>
+                <p class="description">Calcula tu índice de masa corporal (IMC) y te asesoraremos en
+                    cuanto a tu plan de entrenamiento y dieta
+                    personalizada.</p>
+                <div class="calculate-content">
+                    <form action="" class="calculate-form" id="calculate-form">
+                        <div class="calculate-box">
+                            <input type="number" placeholder="Altura" class="input calculate-input"
+                                id="calculate-cm"></input>
+                            <label class="calculate-label">cm</label>
+                        </div>
+                        <div class="calculate-box">
+                            <input type="number" placeholder="Peso" class="input calculate-input"
+                                id="calculate-kg"></input>
+                            <label class="calculate-label">kg</label>
+                        </div>
+                        <button type="submit" class="button button-flex">
+                            Calcular
+                        </button>
+                        <p class="calculate-message" id="calculate-message"> </p>
+                    </form>
+                    
+                    <img src="./img/imc.png" class="calculate-img">
+                </div>
+            </div>
+
+
+            <h2 class="heading">Entrenamientos</h2>
+
+            <h2 class="heading">Dietas</h2>
+
         </section>
         <!-- Fin Sección Planes -->
 
@@ -67,6 +113,7 @@
 
     <script src="./js/active.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/imc.js"></script>
 
 </body>
 
