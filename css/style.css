@@ -2,6 +2,7 @@
 
 :root {
     --color-prymary    : #eb4d4d;
+    --color-prymary-1  : rgb(153, 5, 5);
     --color-prymary-2  : #ec4c4ce7;
     --color-secondary-1: #615f62;
     --color-secondary-2: #6b6b6d;
@@ -63,7 +64,7 @@ input {
 
 .section-subtitle {
     font-size     : 1.5rem;
-    font-family   : 'Kaushan Script', cursive;
+    font-family   : "Alegreya", serif;
     font-weight   : 400;
     letter-spacing: 1.5px;
     color         : var(--color-prymary-2);
@@ -81,11 +82,6 @@ input {
     color              : transparent;
 }
 
-.grid {
-    display: grid;
-    gap    : 1.5rem;
-}
-
 .main {
     overflow: hidden;
     /* For animation ScrollReveal */
@@ -98,7 +94,7 @@ input {
     margin-bottom      : 2rem;
     font-family        : "Alegreya", serif;
     -webkit-text-stroke: 1px hsl(180, 4%, 72%);
-    color              : var(--color-prymary);
+    color              : var(--color-prymary-1);
 }
 
 .container {
@@ -141,7 +137,7 @@ nav {
 
 .logo {
     width         : 7.5rem;
-    height        : 7rem;
+    height        : 7.5rem;
     margin-left   : 1.5rem;
     padding-top   : 1rem;
     padding-bottom: 1rem;
@@ -164,7 +160,6 @@ nav {
 
 .links-nav li {
     margin-right: 3rem;
-    transition  : 2s;
 }
 
 .links-nav li a {
@@ -175,7 +170,6 @@ nav {
 
 .active {
     border-bottom: double 0.5rem var(--color-white);
-    padding      : 0.5rem;
     transition   : all 300ms ease-in-out;
 }
 
@@ -334,59 +328,55 @@ nav {
 
 /*Entrenamientos*/
 
-.program-container{
-    display: flex;
+.program-container {
+    display        : flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom:4rem;
-    margin-top: 4rem;
+    flex-wrap      : wrap;
+    gap            : 2rem;
+    margin-bottom  : 4rem;
+    margin-top     : 4rem;
 }
 
-.program-card{
-    width: 22rem;
-    height: 26rem;
+.program-card {
+    width           : 22rem;
+    height          : 26rem;
     background-color: transparent;
-    padding: 1.5rem 1rem;
-    border: 2px solid var(--color-white);
-    transition: 2s ease-in-out;
+    padding         : 1.5rem 1rem;
+    border          : 2px solid var(--color-white);
+    transition      : 2s ease-in-out;
 }
 
-.program-card:hover{
+.program-card:hover {
+    cursor          : pointer;
     background-color: var(--color-prymary);
-    transform: scale(1.1);
+    transform       : scale(1.1);
 }
 
-.program-img{
+.program-img {
     width: 38px;
 }
 
-.program-shape{
-    width: 4rem;
-    height: 4rem;
+.program-shape {
+    width           : 4rem;
+    height          : 4rem;
     background-color: var(--color-white);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    margin-bottom: .5rem;
+    border-radius   : 50%;
+    display         : grid;
+    place-items     : center;
+    margin-bottom   : .5rem;
 }
 
-.program-title{
-    font-size: 1.8rem;
+.program-title {
+    font-size    : 1.8rem;
     margin-bottom: 1rem;
-    color: var(--color-white);
+    color        : var(--color-white);
 }
 
-.program-description{
-    font-size: 1.4rem;
-    color: var(--color-white);
+.program-description {
+    font-size  : 1.4rem;
+    color      : var(--color-white);
     line-height: 120%;
-
 }
-
-
-
-
 
 /*Dietas*/
 
@@ -431,11 +421,95 @@ nav {
 }
 
 .content .row .cols .boxes img {
-    height    : 100%;
-    width     : 100%;
-    object-fit: cover;
+    height       : 100%;
+    width        : 100%;
+    object-fit   : cover;
     border-radius: .5rem;
 }
+
+/*SUSCRIPCIONES*/
+
+.prices .content {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    flex-wrap      : wrap;
+    margin-top     : 5rem;
+    margin-bottom  : 5rem;
+    gap: 1.5rem;
+}
+
+.card-img{
+    width: 5rem;
+    background: var(--color-white);
+    margin: auto;
+}
+
+.card {
+    width        : 220px;
+    height       : 254px;
+    border-radius: 20px;
+    background   : var(--color-black);
+    position     : relative;
+    padding      : 1.8rem;
+    border       : 2px solid #c3c6ce;
+    transition   : 0.5s ease-out;
+    overflow     : visible;
+}
+
+.card-details {
+    color        : var(--color-prymary-2);
+    height       : 100%;
+    display      : flex;
+    flex-direction: column;
+}
+
+.card-button {
+    transform       : translate(-50%, 125%);
+    width           : 60%;
+    border-radius   : 1rem;
+    border          : none;
+    background-color: var(--color-prymary);
+    color           : #fff;
+    font-size       : 1.5rem;
+    padding         : .5rem 1rem;
+    position        : absolute;
+    left            : 50%;
+    bottom          : 0;
+    opacity         : 0;
+    transition      : 0.3s ease-out;
+}
+
+/*Text*/
+.text-title {
+    font-size  : 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-body {
+    color: var(--color-white);
+    font-size  : 1.3em;
+    font-weight: bold;
+    line-height: 2;
+}
+
+/*Hover*/
+.card:hover {
+    border-color:var(--color-prymary);
+    box-shadow  : 0 4px 18px 0 rgba(0, 0, 0, 0.692);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity  : 1;
+}
+
+.card-button a{
+    color: var(--color-white);
+}
+
 
 
 
@@ -503,8 +577,8 @@ nav {
         order: 0;
     }
 
-    .content .row .cols .boxes{
-        width: 90%;
+    .content .row .cols .boxes {
+        width : 90%;
         height: 80%;
         margin: auto;
     }
