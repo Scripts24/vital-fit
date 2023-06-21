@@ -1,7 +1,7 @@
 //Clase active
 
 const li = document.querySelectorAll(".links")
-const sec = document.querySelectorAll("section")
+const sec = document.querySelectorAll("section , footer")
 
 function activeMenu(){
     let len = sec.length
