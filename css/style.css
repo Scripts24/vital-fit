@@ -46,19 +46,9 @@ input {
     font-family: "Quicksand", sans-serif;
 }
 
-.section-title,
 .section-title-border {
     font-size     : 2.75rem;
     letter-spacing: 1.5px;
-}
-
-.section-subtitle {
-    font-size     : 1.5rem;
-    font-family   : "Alegreya", serif;
-    font-weight   : 400;
-    letter-spacing: 1.5px;
-    color         : var(--color-prymary-2);
-    transform     : rotate(-2deg);
 }
 
 .section-titles {
@@ -85,6 +75,7 @@ input {
     font-family        : "Alegreya", serif;
     -webkit-text-stroke: 1px hsl(180, 4%, 72%);
     color              : var(--color-prymary-1);
+    letter-spacing     : .5rem;
 }
 
 .container {
@@ -165,7 +156,6 @@ input {
     height    : 100%;
     background: var(--color-prymary);
 }
-
 
 /* HEADER */
 
@@ -649,8 +639,21 @@ nav {
 
 /*GALERÍA*/
 
-.gallery {
-    height: 100vh;
+.gallery .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 2rem;
+}
+
+.gallery .content .box img{
+    display: block;
+    width: 100%;
+    filter: drop-shadow(10px 8px 8px rgba(128, 128, 128, 0.301));
 }
 
 
@@ -672,9 +675,9 @@ nav {
     padding  : 1.6rem;
 }
 
-#contact .content .form{
+#contact .content .form {
     padding-right: 6rem;
-    padding-left: 6rem;
+    padding-left : 6rem;
 }
 
 #contact .content .form input,
@@ -870,7 +873,7 @@ nav {
     }
 
     #contact .content .text h2,
-    p {
+    #contact .content .text p {
         text-align: center;
     }
 
