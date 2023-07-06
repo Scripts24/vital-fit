@@ -46,6 +46,67 @@ input {
     font-family: "Quicksand", sans-serif;
 }
 
+/* COOKIES */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: var(--color-prymary);
+    margin: 15% auto;
+    padding: 40px;
+    border: 2px solid #888;
+    width: 60%;
+}
+
+.modal-content h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-secondary-3);
+    line-height: 2;
+}
+
+.modal-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.close {
+    color: var(--color-secondary-2);
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+#acceptBtn {
+    background-color: var(--color-secondary-3);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    display: block;
+}
+
+#acceptBtn:hover {
+    background-color: var(--color-secondary-2);
+}
+
+
 .section-title-border {
     font-size     : 2.75rem;
     letter-spacing: 1.5px;
@@ -238,8 +299,8 @@ nav {
 /* SECCIÓN INICIO */
 
 .home {
-    height            : 100vh;
-    position          : relative;
+    height  : 100vh;
+    position: relative;
 }
 
 video {
@@ -249,19 +310,19 @@ video {
     width     : 100%;
     height    : 100%;
     object-fit: cover;
-   
+
     clip-path: polygon(0 0, 100% 0, 100% 89%, 0 96%);
 }
 
 .capa {
-    position        : absolute;
-    top             : 0;
-    left            : 0;
-    width           : 100%;
-    height          : 100%;
-    background: var(--color-secondary-3);
-    opacity         : 0;
-    mix-blend-mode  : overlay;
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+    width         : 100%;
+    height        : 100%;
+    background    : var(--color-secondary-3);
+    opacity       : 0;
+    mix-blend-mode: overlay;
 }
 
 /*Bajar de sección*/
@@ -811,12 +872,6 @@ video {
 
 
 
-
-
-
-
-
-
 /*-----------------------------------------------------------------*/
 
 /*------MEDIA QUERIES-------*/
@@ -830,7 +885,7 @@ video {
         display : block;
         top     : 2.5rem;
         position: absolute;
-        right   : 25px;
+        right   : 8%;
         cursor  : pointer;
     }
 

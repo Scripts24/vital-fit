@@ -43,14 +43,14 @@ window.addEventListener("resize", function () {
 // SCROLL REVEAL
 
 const sr = ScrollReveal({
-    origin : 'top',
-    distance : '60px',
+    origin: 'top',
+    distance: '60px',
     duration: 3000,
     delay: 600
 })
 
 sr.reveal(`.home-p`)
-sr.reveal(`.logos, .program-container, .card-prices, .trainers `, {interval:100})
-sr.reveal(`.a, .calculate-form, .left-img, .footer-form`, {origin:'left'})
-sr.reveal(`.b, .calculate-img, .right-img, .footer-info `, {origin:'right'})
+sr.reveal(`.logos, .program-container, .card-prices, .trainers `, { interval: 100 })
+sr.reveal(`.a, .calculate-form, .left-img, .footer-form`, { origin: 'left' })
+sr.reveal(`.b, .calculate-img, .right-img, .footer-info `, { origin: 'right' })
 
