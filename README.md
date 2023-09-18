@@ -10,7 +10,6 @@
 * Unplash
 * Clippy
 * Neumorphism
-* Preloader Codepen
 * ScrollReveal
 * Google Fonts
 ---
