@@ -49,57 +49,57 @@ input {
 /* COOKIES */
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    display         : none;
+    position        : fixed;
+    z-index         : 100;
+    left            : 0;
+    top             : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
     background-color: var(--color-prymary);
-    margin: 15% auto;
-    padding: 40px;
-    border: 2px solid #888;
-    width: 60%;
+    margin          : 15% auto;
+    padding         : 40px;
+    border          : 2px solid #888;
+    width           : 60%;
 }
 
-.modal-content h2{
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--color-secondary-3);
+.modal-content h2 {
+    font-size  : 2.5rem;
+    text-align : center;
+    color      : var(--color-secondary-3);
     line-height: 2;
 }
 
-.modal-content p{
-    font-size: 1.5rem;
+.modal-content p {
+    font-size  : 1.5rem;
     font-weight: 500;
 }
 
 .close {
-    color: var(--color-secondary-2);
-    float: right;
-    font-size: 2rem;
+    color      : var(--color-secondary-2);
+    float      : right;
+    font-size  : 2rem;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: var(--color-black);
+    color : var(--color-black);
     cursor: pointer;
 }
 
 #acceptBtn {
     background-color: var(--color-secondary-3);
-    color: var(--color-white);
-    padding: 1rem 2rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin: 2rem auto;
-    display: block;
+    color           : var(--color-white);
+    padding         : 1rem 2rem;
+    cursor          : pointer;
+    font-size       : 1.5rem;
+    margin          : 2rem auto;
+    display         : block;
 }
 
 #acceptBtn:hover {
@@ -141,7 +141,7 @@ input {
 
 .container {
     margin: auto;
-    width: 100%;
+    width : 100%;
 }
 
 /* PROGRESO SCROLL */
@@ -660,6 +660,46 @@ video {
     text-align: center;
     margin-top: 2rem;
     color     : var(--color-white);
+}
+
+/*Slider infinito patrocinadores*/
+
+.brands {
+    width        : 100%;
+    height       : 25vh;
+    background   : var(--color-secondary-3);
+    display      : grid;
+    place-items  : center;
+    margin-bottom: 45px;
+}
+
+.slider {
+    width   : 100%;
+    height  : fit-content;
+    overflow: hidden;
+}
+
+.container-brands{
+    width          : fit-content;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    animation      : slide 25s linear infinite;
+}
+
+.container-brands img {
+    width : 110px;
+    margin: 0 25px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /*GALERÍA*/
